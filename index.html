@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#242424">
+  <meta name="description" content="إسراء سالم — مصممة واجهات UI/UX ومطورة Front-End">
+  <title>إسراء سالم | مصممة تجربة المستخدم ومطورة واجهات</title>
+  <!-- link preview (WhatsApp, LinkedIn, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:site_name" content="إسراء سالم">
+  <meta property="og:title" content="إسراء سالم | مصممة تجربة المستخدم ومطورة واجهات">
+  <meta property="og:description" content="إسراء سالم — مصممة واجهات UI/UX ومطورة Front-End">
+  <meta property="og:image" content="assets/og/index.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="ES.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#home" class="brand" aria-label="الرئيسية" data-en-label="Home">
+    <img src="ES.png" alt="Esraa Salem" width="40" height="40">
+  </a>
+
+  <!-- ===== Navigation (desktop / tablet only) ===== -->
+  <nav class="dock" aria-label="التنقل بين الأقسام" data-en-label="Sections">
+    <a href="#home" class="dock-link" data-label="الرئيسية" aria-label="الرئيسية" data-en-label="Home">
+      <svg viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+    </a>
+    <a href="#about" class="dock-link" data-label="عني" aria-label="عني" data-en-label="About">
+      <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M10 5V3h4v2"/><circle cx="9" cy="11" r="2"/><path d="M5.5 17c.6-1.6 1.9-2.3 3.5-2.3s2.9.7 3.5 2.3"/><path d="M15 10.5h3M15 14h2.5"/></svg>
+    </a>
+    <a href="#skills" class="dock-link" data-label="المهارات" aria-label="المهارات" data-en-label="Skills">
+      <svg viewBox="0 0 24 24"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+    </a>
+    <a href="#projects" class="dock-link" data-label="الأعمال" aria-label="الأعمال" data-en-label="Work">
+      <svg viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4M4 17v2M5 18H3"/></svg>
+    </a>
+    <a href="#contact" class="dock-link" data-label="تواصل معي" aria-label="تواصل معي" data-en-label="Contact">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <!-- language switch: set apart like Figma's Dev Mode toggle -->
+    <div class="dock-lang">
+      <span class="dock-sep" aria-hidden="true"></span>
+      <button type="button" class="dock-link lang-toggle" data-label="English" aria-label="English" aria-pressed="false">
+        <svg viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section id="home" class="hero">
+      <div class="art art-hero" dir="ltr" aria-label="ملف الأعمال 2026 — مصممة ومطورة واجهات رقمية، إسراء" data-en-label="UI/UX Portfolio — Front End, Designer &amp; Developer">
+        <div class="sel sel-purple art-top"><span data-en="UI/UX">2026</span></div>
+        <span class="tag tag-green art-top-tag" data-en="&lt;i class=&quot;cursor&quot;&gt;&lt;/i&gt;2026"><i class="cursor"></i>واجهات رقمية</span>
+
+        <div class="sel sel-blue art-main"><span data-en="PORTFOLIO">ملف الأعمال</span></div>
+        <span class="pill pill-blue art-left-pill" data-en="&lt;i class=&quot;cursor cursor-up&quot;&gt;&lt;/i&gt;Designer &amp;amp; Developer"><i class="cursor cursor-up"></i>تجربة المستخدم</span>
+
+        <div class="sel sel-pink art-sub"><span data-en="FRONT END">مصممة ومطورة</span></div>
+        <span class="tag tag-yellow art-sub-tag" data-en="&lt;i class=&quot;cursor&quot;&gt;&lt;/i&gt;Esraa"><i class="cursor"></i>إسراء</span>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section about">
+      <h2 class="stamp" dir="ltr">
+        <span class="sel sel-blue stamp-main"><span data-en="ABOUT ME">نبذة عني</span><i class="cursor cursor-up"></i></span>
+        <span class="sel sel-pink stamp-sub"><span data-en="who I am">من أنا</span><i class="cursor cursor-sub"></i></span>
+      </h2>
+
+      <div class="container about-body">
+        <div class="about-col about-ar">
+          <h3 class="about-hello">أهلًا، أنا إسراء</h3>
+          <p class="about-lead type-in">مصممة ومطورة واجهات رقمية<br>أهتم ببناء تجارب تجمع بين <span class="neon">وضوح التصميم</span> وجودة التنفيذ. <span class="seal" aria-hidden="true"><i class="fa-solid fa-check"></i> معتمد</span></p>
+          <p class="about-note type-in">كل قرار بصري له سبب، وكل واجهة يجب أن تكون واضحة، عملية، وقابلة للاستخدام.</p>
+        </div>
+
+        <div class="about-col about-en" dir="ltr" lang="en">
+          <h3 class="about-hello about-hello-en">Hi, I am Esraa</h3>
+          <p class="about-lead type-in">Digital Interface Designer and Developer<br>I focus on building experiences that combine <span class="neon">design clarity</span> with high-quality execution. <span class="seal" aria-hidden="true"><i class="fa-solid fa-check"></i> APPROVED</span></p>
+          <p class="about-motto type-in">DESIGN WITH PURPOSE BUILD WITH CLARITY</p>
+        </div>
+      </div>
+
+      <ul class="chips" aria-label="أبرز النقاط" data-en-label="Highlights">
+        <li class="chip c-blue"   style="--r:-11deg" data-en="UI/UX">تجربة المستخدم</li>
+        <li class="chip c-yellow" style="--r:-2deg" data-en="8+ Projects">+8 مشاريع</li>
+        <li class="chip c-green"  style="--r:10deg" data-en="Front-End">تطوير الواجهات</li>
+        <li class="chip c-pink"   style="--r:-11deg" data-en="Responsive Design">تصميم متجاوب</li>
+        <li class="chip c-blue"   style="--r:-2deg" data-en="Design → Build">من التصميم إلى التنفيذ</li>
+        <li class="chip c-purple" style="--r:10deg" data-en="Design Systems">أنظمة التصميم</li>
+        <li class="chip c-yellow" style="--r:-11deg" data-en="Interactive Interfaces">واجهات تفاعلية</li>
+      </ul>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section skills">
+      <h2 class="stamp" dir="ltr">
+        <span class="sel sel-blue stamp-main"><span data-en="SKILLS">المهارات</span><i class="cursor cursor-up"></i></span>
+        <span class="sel sel-pink stamp-sub"><span data-en="what I do">ما أتقنه</span><i class="cursor cursor-sub"></i></span>
+      </h2>
+
+      <div class="container skills-grid">
+        <article class="sel skill-box" style="--c:var(--yellow)">
+          <span class="skill-num">01</span>
+          <h3 data-en="UI/UX DESIGN">تصميم تجربة المستخدم</h3>
+          <ul><li data-en="UX Analysis">تحليل تجربة المستخدم</li><li data-en="User Flows">رحلات المستخدم</li><li data-en="Wireframes">المخططات الأولية</li><li data-en="Figma · Prototype">Figma · النماذج التفاعلية</li><li data-en="Design Systems">أنظمة التصميم</li></ul>
+        </article>
+        <article class="sel skill-box" style="--c:var(--green)">
+          <span class="skill-num">02</span>
+          <h3 data-en="FRONT-END">تطوير الواجهات</h3>
+          <ul class="inline"><li>HTML</li><li>CSS</li><li>JS</li><li>FLEXBOX</li><li>GRID</li><li data-en="RESPONSIVE">تصميم متجاوب</li><li>RTL / LTR</li></ul>
+        </article>
+        <article class="sel skill-box" style="--c:var(--orange)">
+          <span class="skill-num">03</span>
+          <h3 data-en="AI + PRODUCTIVITY">الذكاء الاصطناعي والإنتاجية</h3>
+          <ul><li>Claude</li><li>ChatGPT</li><li>Gemini</li></ul>
+        </article>
+        <article class="sel skill-box" style="--c:var(--purple)">
+          <span class="skill-num">04</span>
+          <h3 data-en="TOOLS &amp;amp; WORKFLOW">الأدوات وسير العمل</h3>
+          <ul><li>Git · GitHub · VS Code</li><li>Google Apps Script</li><li>Netlify</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Selected Work ===== -->
+    <section id="projects" class="section projects">
+      <div class="tapes" aria-hidden="true">
+        <div class="tape t-yellow"><div class="tape-track" data-text="أعمال مختارة" data-en-text="SELECTED WORK"></div></div>
+        <div class="tape t-pink"><div class="tape-track reverse" data-text="مشاريع مختارة" data-en-text="FEATURED PROJECTS"></div></div>
+        <div class="tape t-blue"><div class="tape-track" data-text="أعمال مختارة" data-en-text="SELECTED WORK"></div></div>
+        <div class="tape t-purple"><div class="tape-track reverse" data-text="مشاريع مختارة" data-en-text="FEATURED PROJECTS"></div></div>
+      </div>
+      <h2 class="sr-only" data-en="Selected work">أعمال مختارة</h2>
+
+      <div class="cards">
+        <!-- Siraj -->
+        <article class="card card-siraj reveal">
+          <div class="card-media media-siraj">
+            <img src="assets/siraj-phones.png" alt="تطبيق سراج على الجوال" data-en-alt="Siraj mobile app" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title"><img src="assets/siraj-logo.png" alt="سراج" data-en-alt="Siraj" class="card-logo" loading="lazy"></h3>
+            <p class="card-desc" data-en="A digital platform that helps parents easily discover the right activities for their children.">منصة رقمية تساعد أولياء الأمور على اكتشاف الأنشطة المناسبة لأطفالهم بسهولة.</p>
+            <p class="card-tags" data-en="UI/UX · MOBILE APP · DASHBOARD · LANDING PAGE">تجربة المستخدم · تطبيق جوال · لوحة تحكم · صفحة هبوط</p>
+            <a class="btn-case" href="siraj.html">
+              <span data-en="VIEW CASE STUDY">عرض دراسة الحالة</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- PathEra (featured) -->
+        <article class="card card-pathera is-featured reveal">
+          <div class="card-media media-pathera">
+            <div class="screen">
+              <img src="assets/pathera-screen.jpg" alt="الصفحة الرئيسية لمنصة PathEra" data-en-alt="PathEra home page" loading="lazy">
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title"><img src="assets/pathera-logo.png" alt="PathEra" class="card-logo" loading="lazy"></h3>
+            <p class="card-desc" data-en="A digital platform that helps job seekers discover the right opportunities and get ready for them with clarity.">منصة رقمية تساعد الباحثين عن عمل على اكتشاف الفرص المناسبة والاستعداد لها بوضوح.</p>
+            <p class="card-tags" data-en="UI/UX · WEB PLATFORM · LANDING PAGE · FRONT-END">تجربة المستخدم · منصة ويب · صفحة هبوط · تطوير الواجهات</p>
+            <a class="btn-case" href="pathera.html">
+              <span data-en="VIEW CASE STUDY">عرض دراسة الحالة</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- School dashboard -->
+        <article class="card card-dash reveal">
+          <div class="card-media media-dash">
+            <img src="assets/dashboard-illustration.png" alt="رسم توضيحي للوحة الإدارة المدرسية" data-en-alt="School dashboard illustration" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title card-title-text" data-en="School Admin &amp; Follow-up Dashboard">لوحة الإدارة والمتابعة المدرسية</h3>
+            <p class="card-desc" data-en="An admin dashboard that brings tasks, data and indicators into one interface for easier follow-up and organisation.">لوحة تحكم إدارية تجمع المهام والبيانات والمؤشرات في واجهة واحدة لتسهيل المتابعة والتنظيم.</p>
+            <p class="card-tags" data-en="UI/UX · FRONT-END · DASHBOARD">تجربة المستخدم · تطوير الواجهات · لوحة تحكم</p>
+            <a class="btn-case" href="najah.html">
+              <span data-en="VIEW CASE STUDY">عرض دراسة الحالة</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+      <div class="cards-dots" aria-label="التنقل بين المشاريع" data-en-label="Browse projects"></div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section contact">
+      <h2 class="stamp" dir="ltr">
+        <span class="sel sel-blue stamp-main"><span data-en="LET'S TALK">لنتحدث</span><i class="cursor cursor-up"></i></span>
+        <span class="sel sel-pink stamp-sub"><span data-en="get in touch">تواصل معي</span><i class="cursor cursor-sub"></i></span>
+      </h2>
+
+      <div class="container contact-wrap">
+        <header class="contact-head reveal">
+          <h3 class="contact-title" data-en="Got an idea?">عندك فكرة؟</h3>
+          <p class="contact-desc" data-en="Share the details, and we’ll turn it into a digital experience.">شاركني التفاصيل، ونحوّلها إلى تجربة رقمية.</p>
+        </header>
+
+        <form class="contact-card reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="f-name" class="float-label" data-en="Name">الاسم</label>
+            <input id="f-name" name="name" type="text" class="input" placeholder="الاسم" data-en-placeholder="Name" autocomplete="name" required maxlength="60">
+            <small class="field-error" data-for="f-name"></small>
+          </div>
+
+          <div class="field">
+            <label for="f-phone" class="float-label" data-en="WhatsApp number">رقم الجوال (واتساب)</label>
+            <div class="phone input">
+              <input id="f-phone" name="phone" type="tel" inputmode="numeric" placeholder="رقم الجوال (واتساب)" data-en-placeholder="WhatsApp number" autocomplete="tel-national" required maxlength="12">
+              <label for="f-code" class="sr-only" data-en="Country code">رمز الدولة</label>
+              <select id="f-code" name="code" class="code" dir="ltr">
+                <option value="966" data-len="9" data-start="5" selected>🇸🇦 +966</option>
+                <option value="971" data-len="9" data-start="5">🇦🇪 +971</option>
+                <option value="965" data-len="8">🇰🇼 +965</option>
+                <option value="974" data-len="8">🇶🇦 +974</option>
+                <option value="973" data-len="8">🇧🇭 +973</option>
+                <option value="968" data-len="8">🇴🇲 +968</option>
+                <option value="962" data-len="9" data-start="7">🇯🇴 +962</option>
+                <option value="20"  data-len="10" data-start="1">🇪🇬 +20</option>
+              </select>
+            </div>
+            <small class="field-error" data-for="f-phone"></small>
+          </div>
+
+          <div class="field">
+            <label for="f-niche" class="float-label" data-en="Your field">مجال عملك</label>
+            <input id="f-niche" name="niche" type="text" class="input" placeholder="مجال عملك" data-en-placeholder="Your field" maxlength="60">
+          </div>
+
+          <fieldset class="group">
+            <legend data-en="Do you already have a website or store?">هل لديك موقع أو متجر حالياً؟</legend>
+            <div class="seg">
+              <label class="opt"><input type="radio" name="has_site" value="نعم، عندي"><span data-en="Yes, I do">نعم، عندي</span></label>
+              <label class="opt"><input type="radio" name="has_site" value="لا، أبدأ من الصفر" checked><span data-en="No, starting from scratch">لا، أبدأ من الصفر</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="group">
+            <legend data-en="Services needed &lt;small&gt;(choose one or more)&lt;/small&gt;">الخدمات المطلوبة <small>(اختر واحدة أو أكثر)</small></legend>
+            <div class="services">
+              <label class="opt" style="--c:var(--purple)"><input type="checkbox" name="services" value="تصميم واجهات UI/UX"><span data-en="UI/UX interface design">تصميم واجهات UI/UX</span></label>
+              <label class="opt" style="--c:var(--green)"><input type="checkbox" name="services" value="تطوير Front-End"><span data-en="Front-End development">تطوير Front-End</span></label>
+              <label class="opt" style="--c:var(--blue)"><input type="checkbox" name="services" value="صفحة هبوط Landing Page"><span data-en="Landing page">صفحة هبوط Landing Page</span></label>
+              <label class="opt" style="--c:var(--pink)"><input type="checkbox" name="services" value="لوحة تحكم Dashboard"><span data-en="Dashboard">لوحة تحكم Dashboard</span></label>
+              <label class="opt" style="--c:var(--yellow)"><input type="checkbox" name="services" value="تصميم تطبيق جوال"><span data-en="Mobile app design">تصميم تطبيق جوال</span></label>
+              <label class="opt" style="--c:var(--orange)"><input type="checkbox" name="services" value="إعادة تصميم موقع حالي"><span data-en="Redesign of an existing website">إعادة تصميم موقع حالي</span></label>
+              <label class="opt" style="--c:var(--blue)"><input type="checkbox" name="services" value="تصميم واجهات متاجر سلة وزد"><span data-en="Salla &amp; Zid store design">تصميم واجهات متاجر سلة وزد</span></label>
+              <label class="opt" style="--c:var(--pink)"><input type="checkbox" name="services" value="أخرى" id="f-other-toggle"><span data-en="Other">أخرى</span></label>
+            </div>
+            <div class="field other-field" hidden>
+              <label for="f-other" class="float-label" data-en="Other service">الخدمة الأخرى</label>
+              <input id="f-other" name="other" type="text" class="input" placeholder="اكتب الخدمة التي تحتاجها" data-en-placeholder="Write the service you need" maxlength="80">
+            </div>
+            <small class="field-error" data-for="services"></small>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-details" class="group-label" data-en="Tell me about your project in detail">احكِ لي عن مشروعك بالتفصيل</label>
+            <textarea id="f-details" name="details" class="input textarea" rows="5" maxlength="2000"
+              data-en-placeholder="Take your time: What do you offer? Who is your audience? What problem are you facing right now? And what would you like to achieve?"
+              placeholder="اكتب براحتك: ماذا تقدم؟ من هو جمهورك؟ ما المشكلة التي تواجهك حالياً؟ وما الذي تتمنى الوصول إليه؟"></textarea>
+            <span class="counter" id="counter" dir="ltr">0/2000</span>
+          </div>
+
+          <button type="submit" class="btn-send">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span data-en="Send the request via WhatsApp">أرسل الطلب عبر واتساب</span>
+          </button>
+          <p class="form-hint" data-en="WhatsApp will open with a ready-made message — just press send.">سيفتح واتساب برسالة جاهزة، فقط اضغط إرسال.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="art art-footer" dir="ltr" aria-label="من الفكرة إلى الواجهة — تجربة صُنعت لتُعاش" data-en-label="From idea to interface — experience made to be felt">
+      <div class="sel sel-purple art-top"><span data-en="From idea">من الفكرة</span></div>
+      <span class="tag tag-green art-top-tag" data-en="&lt;i class=&quot;cursor&quot;&gt;&lt;/i&gt;to"><i class="cursor"></i>إلى</span>
+
+      <div class="sel sel-blue art-main"><span data-en="interface">الواجهة</span></div>
+      <span class="pill pill-blue art-left-pill" data-en="&lt;i class=&quot;cursor cursor-up&quot;&gt;&lt;/i&gt;experience"><i class="cursor cursor-up"></i>تجربة</span>
+
+      <div class="sel sel-pink art-sub"><span data-en="Made to be felt">صُنعت لتُعاش</span></div>
+      <span class="tag tag-yellow art-sub-tag" data-en="&lt;i class=&quot;cursor&quot;&gt;&lt;/i&gt;User"><i class="cursor"></i>المستخدم</span>
+    </div>
+
+        <div class="container footer-bar">
+      <a href="#home" class="footer-brand" aria-label="الرئيسية" data-en-label="Home">
+        <img src="ES.png" alt="" width="44" height="44" loading="lazy">
+        <span><strong data-en="Esraa Salem">إسراء سالم</strong><small data-en="UI/UX Designer &amp;amp; Front-End Developer">مصممة تجربة المستخدم ومطورة واجهات</small></span>
+        <svg class="signature" viewBox="0 0 140 72" aria-hidden="true">
+          <path pathLength="1" style="--d:0s;--t:1.1s" d="M22 32 C6 20 14 5 34 7 C54 9 58 28 40 42 C60 38 80 36 98 33 C86 37 72 41 60 44 C80 42 102 40 126 37"/>
+          <path pathLength="1" class="sig-bold" style="--d:.55s;--t:.35s" d="M41 42 C52 40 64 39 76 38"/>
+          <path pathLength="1" class="sig-bold" style="--d:.8s;--t:.3s" d="M84 40 C98 39 112 38 126 37"/>
+          <path pathLength="1" style="--d:1.05s;--t:1s" d="M126 37 C106 45 92 57 96 62 C100 65 107 52 90 46 C62 39 22 45 14 54 C10 61 40 65 72 62"/>
+          <path pathLength="1" style="--d:2s;--t:.2s" d="M30 23 c3 -3 7 0 4 3"/>
+          <path pathLength="1" style="--d:2.15s;--t:.15s" d="M104 24 l2 5"/>
+        </svg>
+      </a>
+
+      <nav class="footer-nav" aria-label="أقسام الموقع" data-en-label="Site sections">
+        <a href="#home" style="--c:var(--blue)" data-en="Home">الرئيسية</a>
+        <a href="#about" style="--c:var(--pink)" data-en="About">عني</a>
+        <a href="#skills" style="--c:var(--yellow)" data-en="Skills">المهارات</a>
+        <a href="#projects" style="--c:var(--purple)" data-en="Work">الأعمال</a>
+        <a href="#contact" style="--c:var(--green)" data-en="Contact">تواصل معي</a>
+      </nav>
+
+    <ul class="socials">
+      <li><a href="https://wa.me/966545916805" target="_blank" rel="noopener" aria-label="واتساب" data-en-label="WhatsApp" style="--c:var(--green)"><i class="fa-brands fa-whatsapp"></i></a></li>
+      <li><a href="https://www.instagram.com/es.salem1/" target="_blank" rel="noopener" aria-label="انستقرام" data-en-label="Instagram" style="--c:var(--pink)"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/esraa-salem-354059311" target="_blank" rel="noopener" aria-label="لنكد إن" data-en-label="LinkedIn" style="--c:var(--blue)"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.behance.net/gallery/249749255/_" target="_blank" rel="noopener" aria-label="بيهانس" data-en-label="Behance" style="--c:var(--purple)"><i class="fa-brands fa-behance"></i></a></li>
+    </ul>
+    </div>
+
+    <p class="copy"><span data-en="Designed &amp; built with care">صُمم وطُوّر بعناية</span> <span class="copy-en" dir="ltr">© ES · <span id="year">2026</span></span></p>
+  </footer>
+
+  <!-- Figma-style multiplayer cursor (desktop: follows the mouse · touch: shows briefly where you tap) -->
+  <div class="fig-cursor" aria-hidden="true"><i class="cursor"></i><span class="fig-cursor-label">You</span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

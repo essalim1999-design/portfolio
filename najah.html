@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F7F7F7">
+  <meta name="description" content="دراسة حالة لوحة نجاة الإدارية — لوحة إدارة ومتابعة مدرسية لعميلة حقيقية. تصميم إسراء سالم.">
+  <title>لوحة نجاة الإدارية | دراسة حالة — إسراء سالم</title>
+  <!-- link preview (WhatsApp, LinkedIn, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:site_name" content="إسراء سالم">
+  <meta property="og:title" content="لوحة نجاة الإدارية | دراسة حالة — إسراء سالم">
+  <meta property="og:description" content="دراسة حالة لوحة نجاة الإدارية — لوحة إدارة ومتابعة مدرسية لعميلة حقيقية. تصميم إسراء سالم.">
+  <meta property="og:image" content="assets/og/najah.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="ES.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="najah.css">
+</head>
+<body>
+
+  <!-- ===== Top bar ===== -->
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a href="#top" class="topbar-logo">لوحة نجاة الإدارية</a>
+      <nav class="topbar-nav" aria-label="أقسام دراسة الحالة">
+        <a href="#problem">المشكلة</a>
+        <a href="#requirements">المتطلبات</a>
+        <a href="#ia">الهيكلة</a>
+        <a href="#screens">الواجهات</a>
+        <a href="#build">التنفيذ التقني</a>
+      </nav>
+      <a href="index.html#projects" class="back">
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        <span>العودة للبورتفوليو</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Cover (same card as the dashboard's welcome card) ===== -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-card reveal">
+          <div class="hero-text">
+            <p class="eyebrow">دراسة حالة مختصرة</p>
+            <h1>لوحة نجاة<br>الإدارية</h1>
+            <p class="hero-desc">لوحة إدارة ومتابعة مدرسية صُممت لعميلة حقيقية بهدف جمع المهام والمراسلات والمؤشرات والتقارير في واجهة رقمية مركزية وسهلة التنقل.</p>
+          </div>
+          <img src="assets/najah/hero.png" alt="" class="hero-img" width="700" height="467">
+          <dl class="hero-stats">
+            <div><dt>الدور</dt><dd dir="ltr">UI/UX Designer</dd></div>
+            <div><dt>النوع</dt><dd dir="ltr">Administrative Dashboard</dd></div>
+            <div><dt>السنة</dt><dd>2026</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 02 Problem ===== -->
+    <section class="block" id="problem">
+      <div class="wrap">
+        <article class="tab-card tab-pink reveal">
+          <p class="eyebrow">02 — المشكلة</p>
+          <h2 class="title">بيانات كثيرة… وواجهة يجب ألا تزدحم</h2>
+          <p class="lead">تتضمن الإدارة المدرسية أنواعًا متعددة من البيانات والمهام، من المراسلات والمتابعة إلى المؤشرات والتقارير. كان التحدي هو تنظيم هذا المحتوى داخل نظام واحد دون أن تصبح الواجهة مزدحمة أو يصعب الوصول إلى المعلومات المهمة.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== 03 Requirements ===== -->
+    <section class="block" id="requirements">
+      <div class="wrap">
+        <p class="eyebrow reveal">03 — تحليل المتطلبات</p>
+        <h2 class="title reveal">من احتياجات العميلة إلى مجموعات واضحة</h2>
+        <p class="lead reveal">تم تحويل احتياجات العميلة إلى مجموعات واضحة تساعد على بناء النظام:</p>
+
+        <div class="req-grid">
+          <article class="tab-card tab-purple reveal">
+            <h3><i class="fa-regular fa-envelope"></i> بوابة المراسلات</h3>
+            <ul class="badges">
+              <li class="b-out">الصادر</li><li class="b-in">الوارد</li><li class="b-new">قيد الإجراء</li><li class="b-done">المنجزة</li><li class="b-later">الأرشيف</li>
+            </ul>
+          </article>
+          <article class="tab-card tab-blue reveal">
+            <h3><i class="fa-solid fa-chart-simple"></i> المؤشرات العامة</h3>
+            <ul class="badges">
+              <li class="b-in">متابعة المعلمات</li><li class="b-new">الدروس والواجبات</li><li class="b-out">الأنشطة والمشاركات</li><li class="b-later">الطالبات</li><li class="b-done">الإعلانات</li>
+            </ul>
+          </article>
+          <article class="tab-card tab-yellow reveal">
+            <h3><i class="fa-regular fa-clipboard"></i> التقارير</h3>
+            <p>عرض البيانات المكتملة ومتابعة النتائج.</p>
+          </article>
+          <article class="tab-card tab-green reveal">
+            <h3><i class="fa-solid fa-gear"></i> الإعدادات</h3>
+            <p>الإعدادات وإدارة النظام.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 04 Information architecture (drawn as the real sidebar) ===== -->
+    <section class="block" id="ia">
+      <div class="wrap ia">
+        <div class="ia-text reveal">
+          <p class="eyebrow">04 — هيكلة المعلومات</p>
+          <h2 class="title">خمسة مسارات بدل شاشة واحدة مزدحمة</h2>
+          <p class="lead">تم تنظيم التنقل الرئيسي إلى: الرئيسية ← بوابة المراسلات ← المؤشرات العامة ← التقارير ← الإعدادات. ساعد هذا الهيكل على تقسيم كمية المعلومات إلى مسارات واضحة بدل عرض كل البيانات في شاشة واحدة.</p>
+        </div>
+
+        <nav class="ia-map reveal" aria-label="مخطط هيكلة المعلومات">
+          <p class="ia-brand">منصة الأدارة والمتابعة</p>
+          <ol>
+            <li class="is-open"><span><i class="fa-solid fa-table-cells-large"></i> الرئيسية</span>
+              <ul><li>المؤشرات السريعة</li><li>آخر المهام</li><li>آخر التحديثات</li></ul></li>
+            <li><span><i class="fa-regular fa-envelope"></i> بوابة المراسلات</span>
+              <ul><li>الصادر</li><li>الوارد</li><li>قيد الإجراء</li><li>المنجزة</li><li>الأرشيف</li></ul></li>
+            <li><span><i class="fa-regular fa-building"></i> المؤشرات العامة</span>
+              <ul><li>المعلمات</li><li>الدروس والواجبات</li><li>الأنشطة</li><li>الطالبات</li><li>الإعلانات</li></ul></li>
+            <li><span><i class="fa-regular fa-clipboard"></i> التقارير</span>
+              <ul><li>البيانات المكتملة</li><li>متابعة النتائج</li></ul></li>
+            <li class="ia-sep"><span><i class="fa-solid fa-gear"></i> الإعدادات</span>
+              <ul><li>إدارة النظام</li></ul></li>
+          </ol>
+          <p class="ia-hint"><i class="fa-regular fa-hand-pointer"></i> اضغطي على أي قسم لرؤية ما بداخله</p>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===== 05 Design solution ===== -->
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow reveal">05 — الحل التصميمي</p>
+        <h2 class="title reveal">المهم أولًا، والتفاصيل على بُعد خطوات</h2>
+        <p class="lead reveal">تم تصميم Dashboard عربية RTL تعتمد على Sidebar واضح وقابل للطي، وبطاقات مختصرة للمؤشرات، وتسلسل بصري يبرز المعلومات الأكثر أهمية أولًا مع إبقاء التفاصيل على بُعد خطوات قليلة.</p>
+
+        <ul class="solution">
+          <li class="reveal"><span class="sol-ic"><i class="fa-solid fa-table-columns"></i></span><h3>Sidebar قابل للطي</h3><p>تنقل ثابت وواضح يمكن طيّه لإفساح المساحة للمحتوى.</p></li>
+          <li class="reveal"><span class="sol-ic"><i class="fa-regular fa-square"></i></span><h3>بطاقات مختصرة للمؤشرات</h3><p>رقم واحد لكل مؤشر، بلون يميّز نوعه.</p></li>
+          <li class="reveal"><span class="sol-ic"><i class="fa-solid fa-layer-group"></i></span><h3>تسلسل بصري</h3><p>الأهم في الأعلى، والتفاصيل داخل كل قسم.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 06 Key interfaces ===== -->
+    <section class="block" id="screens">
+      <div class="wrap">
+        <p class="eyebrow reveal">06 — الواجهات الرئيسية</p>
+        <h2 class="title reveal">الواجهات كما هي في النظام</h2>
+
+        <div class="showcase reveal">
+          <div class="tabs" data-tabs>
+            <div class="tab-list" role="tablist" aria-label="واجهات النظام">
+              <button type="button" role="tab" aria-selected="true">الرئيسية</button>
+              <button type="button" role="tab" aria-selected="false">بوابة المراسلات</button>
+              <button type="button" role="tab" aria-selected="false">المؤشرات العامة</button>
+              <button type="button" role="tab" aria-selected="false">التقارير</button>
+            </div>
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i></div>
+              <div class="browser-view">
+                <figure role="tabpanel"><img src="assets/najah/home.jpg" alt="الرئيسية: ترحيب، المؤشرات السريعة، المهام وآخر التحديثات" width="1440" height="900"></figure>
+                <figure role="tabpanel" hidden><img src="assets/najah/correspondence.jpg" alt="بوابة المراسلات: مؤشرات الصادر والوارد وجدول متابعة المعاملات" loading="lazy" width="1440" height="900"></figure>
+                <figure role="tabpanel" hidden><img src="assets/najah/platform.jpg" alt="المؤشرات العامة: بطاقات المعلمات والأطفال والدروس والأنشطة" loading="lazy" width="1440" height="900"></figure>
+                <figure role="tabpanel" hidden><img src="assets/najah/reports.jpg" alt="التقارير: إجمالي التقارير والمستفيدين والتنبيهات" loading="lazy" width="1440" height="900"></figure>
+              </div>
+            </div>
+            <p class="tab-caption" aria-live="polite">نظرة سريعة على المؤشرات وآخر المهام.</p>
+          </div>
+          <div class="phone"><img src="assets/najah/mobile-home.jpg" alt="الرئيسية على الجوال" loading="lazy" width="780" height="1688"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 07 Challenges & learnings ===== -->
+    <section class="block">
+      <div class="wrap learn">
+        <article class="tab-card tab-yellow reveal">
+          <p class="eyebrow">07 — التحديات والتعلّم</p>
+          <h2 class="title">التحدي</h2>
+          <p class="lead">كان التحدي الأساسي هو تحويل كمية كبيرة من البيانات والمهام المختلفة إلى نظام مفهوم دون إرباك المستخدم، مع التعامل مع التعديلات أثناء العمل والحفاظ على نطاق المشروع.</p>
+        </article>
+        <blockquote class="lesson reveal">
+          <p class="lesson-label"><i class="fa-regular fa-lightbulb"></i> أهم ما تعلمته</p>
+          <p>تصميم الأنظمة الإدارية لا يعتمد على كمية البيانات التي يمكن عرضها، بل على تحديد ما يحتاج المستخدم إلى رؤيته أولًا وكيف يصل إلى بقية المعلومات بأقل خطوات ممكنة.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===== Front-end build ===== -->
+    <section class="block" id="build">
+      <div class="wrap">
+        <p class="eyebrow reveal">التنفيذ التقني — Front-End</p>
+        <h2 class="title reveal">من تصميم فيقما إلى نظام يعمل</h2>
+
+        <!-- summary -->
+        <p class="lead reveal">نُفّذت اللوحة كموقع ثابت من خمس صفحات بـ HTML وCSS وJavaScript بدون أي إطار عمل أو مكتبات خارجية. تعتمد الصفحات على ملف CSS واحد مبني على متغيرات التصميم، وملف JavaScript واحد يدير القائمة الجانبية القابلة للطي والنوافذ المنبثقة ومنتقي التاريخ والوقت المخصص. البيانات محفوظة في Google Sheets عبر Google Apps Script واحد يعمل كواجهة API بسيطة: كل نموذج يُرسل حقوله باسم أعمدة الشيت نفسها، فتُضاف الصفوف تلقائيًا وتُحدَّث بطاقات المؤشرات من العدد الحقيقي للصفوف، والمرفقات تُرفع إلى Google Drive ويُحفظ رابطها. الواجهة RTL ومتجاوبة: القائمة الجانبية تتحول إلى أيقونات على الأجهزة المتوسطة، وإلى شريط تنقل سفلي على الجوال. النظام مُسلَّم ومنشور على Netlify.</p>
+
+        <!-- 1. stack -->
+        <h3 class="subhead reveal">التقنيات المستخدمة فعليًا</h3>
+        <ul class="stack-grid reveal">
+          <li><b dir="ltr">HTML5</b><span>خمس صفحات: الرئيسية، المراسلات، منصة مدرستي، التقارير، الإعدادات.</span></li>
+          <li><b dir="ltr">CSS3</b><span>ملف واحد بمتغيرات التصميم، Grid وFlexbox، و5 نقاط توقف.</span></li>
+          <li><b dir="ltr">Vanilla JavaScript</b><span>ملف واحد: القائمة، النوافذ، النماذج، منتقي التاريخ، الربط بالبيانات.</span></li>
+          <li><b dir="ltr">Google Apps Script</b><span>Web App واحد يستقبل GET للقراءة وPOST للإضافة ورفع الملفات.</span></li>
+          <li><b dir="ltr">Google Sheets</b><span>قاعدة البيانات: ملف واحد، تبويب لكل نوع بيانات.</span></li>
+          <li><b dir="ltr">Google Drive</b><span>حفظ مرفقات المعاملات والإعلانات والتقارير.</span></li>
+          <li><b dir="ltr">Netlify</b><span>الاستضافة والنشر.</span></li>
+        </ul>
+
+        <!-- 2. architecture -->
+        <h3 class="subhead reveal">البنية ومسار البيانات</h3>
+        <ol class="arch reveal" aria-label="مخطط البنية">
+          <li><i class="fa-regular fa-file-code"></i><b>5 صفحات HTML</b><span>نماذج بحقول <code dir="ltr">name</code> = اسم العمود</span></li>
+          <li><i class="fa-brands fa-js"></i><b dir="ltr">main.js</b><span dir="ltr">serializeForm → fetch</span></li>
+          <li><i class="fa-solid fa-code-branch"></i><b dir="ltr">Apps Script API</b><span dir="ltr">GET / POST append / upload</span></li>
+          <li><i class="fa-solid fa-table"></i><b dir="ltr">Google Sheets</b><span>تبويب لكل نوع</span><small><i class="fa-brands fa-google-drive"></i> المرفقات في Drive</small></li>
+        </ol>
+        <p class="arch-note reveal">عند الحفظ: النموذج ← رفع المرفقات إن وُجدت ← إضافة صف في التبويب المحدد بـ <code dir="ltr">data-sheet</code> ← تحديث بطاقة المؤشر المحددة بـ <code dir="ltr">data-stat-target</code>.</p>
+
+        <!-- 3. code -->
+        <h3 class="subhead reveal">مقتطفات من الكود</h3>
+        <div class="code-pair">
+          <figure class="code reveal">
+            <figcaption dir="ltr"><span>js/main.js</span><span>serializeForm</span></figcaption>
+<pre dir="ltr"><code><span class="k">function</span> serializeForm(form) {
+  <span class="k">var</span> data = {};
+  <span class="k">var</span> checkboxGroups = {};
+  form.querySelectorAll(<span class="s">'[name]'</span>).forEach(<span class="k">function</span> (field) {
+    <span class="k">if</span> (field.type === <span class="s">'checkbox'</span>) {
+      <span class="k">if</span> (!field.checked) <span class="k">return</span>;
+      checkboxGroups[field.name] = checkboxGroups[field.name] || [];
+      checkboxGroups[field.name].push(field.value);
+    } <span class="k">else if</span> (field.type === <span class="s">'file'</span>) {
+      data[field.name] = field.dataset.uploadedUrl || <span class="s">''</span>;
+    } <span class="k">else</span> {
+      data[field.name] = field.value;
+    }
+  });
+  Object.keys(checkboxGroups).forEach(<span class="k">function</span> (name) {
+    data[name] = checkboxGroups[name].join(<span class="s">'، '</span>);
+  });
+  <span class="k">return</span> data;
+}</code></pre>
+            <p class="code-why"><b>ماذا يفعل؟</b> يحوّل أي نموذج إلى كائن مفاتيحه أسماء أعمدة الشيت، ويجمع مربعات الاختيار في خانة واحدة، ويضع رابط المرفق بدل الملف.<br><b>لماذا؟</b> لأن الربط بالاسم يجعل إضافة حقل جديد لا تحتاج أي تعديل في JavaScript: يكفي عمود بنفس الاسم في الشيت.</p>
+          </figure>
+
+          <figure class="code reveal">
+            <figcaption dir="ltr"><span>js/main.js</span><span>generic modal submit</span></figcaption>
+<pre dir="ltr"><code><span class="k">var</span> saveBtn = form.querySelector(<span class="s">'.modal-btn-save'</span>);
+<span class="k">if</span> (saveBtn) saveBtn.disabled = <span class="k">true</span>;
+
+uploadFormFiles(form)
+  .then(<span class="k">function</span> () {
+    <span class="k">return</span> fetch(SHEETS_API_URL, {
+      method: <span class="s">'POST'</span>,
+      body: JSON.stringify({ sheet: modal.dataset.sheet,
+        mode: <span class="s">'append'</span>, data: serializeForm(form) })
+    });
+  })
+  .then(<span class="k">function</span> (res) { <span class="k">return</span> res.json(); })
+  .then(<span class="k">function</span> (result) {
+    <span class="k">if</span> (result &amp;&amp; result.error) <span class="k">throw new</span> Error(result.error);
+    <span class="k">if</span> (modal.dataset.statTarget) bumpStat(modal.dataset.statTarget);
+    closeModal(modal);
+    form.reset();
+  })
+  .catch(<span class="k">function</span> () {
+    alert(<span class="s">'تعذّر الحفظ، تأكدي من الاتصال بالإنترنت وحاولي مرة أخرى'</span>);
+  })
+  .finally(<span class="k">function</span> () {
+    <span class="k">if</span> (saveBtn) saveBtn.disabled = <span class="k">false</span>;
+  });</code></pre>
+            <p class="code-why"><b>ماذا يفعل؟</b> معالج واحد لكل النوافذ المنبثقة: يعطّل زر الحفظ، يرفع المرفقات، يضيف الصف، يحدّث المؤشر، ويعرض رسالة عند الفشل.<br><b>لماذا؟</b> بدل كتابة كود لكل نافذة (12 نافذة)، تكفي خاصية <code dir="ltr">data-sheet</code> على النافذة لتصبح مربوطة بالشيت.</p>
+          </figure>
+        </div>
+
+        <!-- 4. responsive -->
+        <h3 class="subhead reveal">التجاوب مع الشاشات</h3>
+        <div class="table-wrap reveal">
+          <table class="resp">
+            <thead><tr><th>الشاشة</th><th>ما الذي يتغير</th></tr></thead>
+            <tbody>
+              <tr><th dir="ltr">&gt; 1180px</th><td>Sidebar كامل + شبكة اللوحة بعمودين، ويمكن طيّ القائمة إلى شريط أيقونات بعرض 84px.</td></tr>
+              <tr><th dir="ltr">≤ 1180px</th><td>شبكة اللوحة تصبح عمودًا واحدًا، والبطاقات الجانبية تصطف أفقيًا.</td></tr>
+              <tr><th dir="ltr">≤ 900px</th><td>بطاقة الترحيب تصغر وتنتقل الرسمة بجانب العنوان.</td></tr>
+              <tr><th dir="ltr">≤ 720px</th><td>البطاقات والرسوم البيانية تنتقل لعمود واحد.</td></tr>
+              <tr><th dir="ltr">≤ 640px</th><td>القائمة الجانبية تختفي ويظهر <b>شريط تنقل سفلي</b> بدلها.</td></tr>
+              <tr><th dir="ltr">≤ 480px</th><td>تقليل الهوامش والحشوات لكل الأقسام.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 5. challenges -->
+        <h3 class="subhead reveal">تحديات تقنية حقيقية وكيف حُلّت</h3>
+        <ul class="challenges">
+          <li class="tab-card tab-pink reveal"><h4>المحاذاة في RTL</h4><p><code dir="ltr">flex-end</code> و<code dir="ltr">text-align: end</code> تعني اليسار في صفحة RTL، فتكرر انحراف الأيقونات والعناوين والأزرار. الحل: قياس المواضع بـ <code dir="ltr">getBoundingClientRect</code> واستخدام اتجاهات صريحة بدل التخمين.</p></li>
+          <li class="tab-card tab-yellow reveal"><h4>منتقي تاريخ يُغلق نفسه</h4><p>داخل النوافذ القابلة للتمرير، يمرّر المتصفح الحقل تلقائيًا عند فتحه فيُطلق حدث scroll يغلق المنتقي فورًا. الحل: إعادة تموضع المنتقي عند التمرير بدل إغلاقه.</p></li>
+          <li class="tab-card tab-blue reveal"><h4>ربط Google Sheets</h4><p>أخطاء بدت كأنها في الكود وليست كذلك: تعديل Apps Script بدون نشر نسخة جديدة، واختلاف همزة في اسم التبويب ("الإعدادات")، وملف JS قديم في ذاكرة المتصفح، وصلاحية Drive غير مفعّلة تظهر كخطأ CORS. الحل: اختبار كل طلب مباشرة بـ <code dir="ltr">fetch</code> لعزل السبب.</p></li>
+        </ul>
+
+        <!-- 6-7. states + compat -->
+        <div class="facts">
+          <article class="tab-card tab-green reveal">
+            <h4>حالات الواجهة</h4>
+            <ul>
+              <li><b>Empty State:</b> رسالة وأيقونة في كل قائمة وبطاقة عند عدم وجود بيانات.</li>
+              <li><b>Loading / Feedback:</b> تعطيل زر الحفظ أثناء الإرسال، ورسالة «تم حفظ الإعدادات» عند النجاح.</li>
+              <li><b>Error:</b> تنبيه عند فشل الحفظ أو انقطاع الاتصال.</li>
+              <li><b>Validation:</b> حقول شرطية تظهر حسب نوع المعاملة. التحقق من الحقول الإلزامية: غير منفذ.</li>
+              <li><b>Loading مرئي أثناء جلب البيانات:</b> غير منفذ (تظهر حالة فارغة حتى تصل البيانات).</li>
+            </ul>
+          </article>
+          <article class="tab-card tab-purple reveal">
+            <h4>توافق المتصفحات</h4>
+            <ul>
+              <li>مشكلة موثقة: خاصية <code dir="ltr">hidden</code> لا تُخفي العنصر إذا كان له <code dir="ltr">display</code> في CSS، وحُلّت بقاعدة <code dir="ltr">[hidden]{display:none}</code> لكل مكوّن.</li>
+              <li>منتقي تاريخ ووقت مخصص بدل منتقي المتصفح، ليكون عربيًا وموحّدًا على كل المتصفحات.</li>
+              <li>اختُبرت الواجهات على متصفحات وأجهزة مختلفة، على الكمبيوتر والجوال.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- 8. AI -->
+        <article class="ai-card reveal">
+          <h4><i class="fa-solid fa-wand-magic-sparkles"></i> التطوير بمساعدة الذكاء الاصطناعي</h4>
+          <p><b>ما ساعد فيه Claude:</b> تحويل تصاميم فيقما إلى HTML وCSS وJavaScript صفحة بصفحة، وكتابة آلية الربط العامة مع Google Sheets والرفع إلى Drive، وتتبع الأخطاء التقنية وإصلاحها.</p>
+          <p><b>ما كان مني:</b> تصميم كل الشاشات والنوافذ في فيقما وتحديد الحقول مع العميلة، ومراجعة كل صفحة بلقطات الشاشة واكتشاف مشاكل المحاذاة والتفاعل، وإعداد الشيت ونشر Apps Script ومنح الصلاحيات، والاختبار قبل التسليم.</p>
+        </article>
+
+        <!-- 9. status -->
+        <div class="status reveal">
+          <div>
+            <h4><i class="fa-solid fa-circle-check"></i> منفذ ويعمل</h4>
+            <ul><li>الصفحات الخمس بتصميم RTL متجاوب</li><li>حفظ وقراءة كل النماذج من Google Sheets</li><li>رفع المرفقات إلى Google Drive</li><li>مؤشرات من العدد الحقيقي للصفوف</li><li>«آخر التحديثات» من آخر صف في 11 تبويب</li><li>النشر على Netlify</li></ul>
+          </div>
+          <div>
+            <h4><i class="fa-regular fa-clock"></i> غير مكتمل / مخطط</h4>
+            <ul><li>تعديل وحذف عناصر «آخر التحديثات» (واجهة فقط حاليًا)</li><li>تقارير تفاعلية أغنى وتكامل مباشر مع مصادر البيانات</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 08 Future ===== -->
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow reveal">08 — التطوير والتحسين</p>
+        <h2 class="title reveal">الخطوة القادمة</h2>
+        <p class="lead reveal">يمكن تطوير النظام مستقبلًا بإضافة تكامل مباشر مع مصادر البيانات، وتحسين التقارير التفاعلية، وتوسيع حالات المتابعة حسب احتياجات الإدارة.</p>
+        <ul class="future">
+          <li class="tab-card tab-purple reveal"><i class="fa-solid fa-plug"></i> تكامل مباشر مع مصادر البيانات</li>
+          <li class="tab-card tab-blue reveal"><i class="fa-solid fa-chart-column"></i> تقارير تفاعلية أغنى</li>
+          <li class="tab-card tab-pink reveal"><i class="fa-solid fa-list-check"></i> حالات متابعة أوسع</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block ending">
+      <div class="wrap">
+        <a class="next-project reveal" href="siraj.html"><small>المشروع التالي</small><strong>سِراج</strong><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
+        <a href="index.html#projects" class="btn"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> العودة للبورتفوليو</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">صُمم وطُوّر بعناية <span dir="ltr">© ES · 2026</span></footer>
+
+  <script src="i18n/najah.en.js"></script>
+  <script src="case-i18n.js"></script>
+  <script src="najah.js"></script>
+</body>
+</html>
